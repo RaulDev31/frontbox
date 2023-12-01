@@ -1,0 +1,149 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* 0. Váriaveis */
+
+:root {
+    --ff-primary: "Nunito", Helvetica, Arial, sans-serif;
+
+    --clr-green-dark: #049A40;
+    --clr-green-ligth: #0BF96A;
+    --clr-pink-dark: #E10BF9;
+    --clr-pink-ligth: #F3A0FD;
+    --clr-white: #F5F5F5;
+}
+
+/* 1. ESTILOS GERAIS */
+
+body {
+    background-color: var(--clr-white);
+    font-family: var(--ff-primary);
+}
+
+a,
+a:active,
+a:link,
+a:visited {
+    text-decoration: none;
+    color: #000;
+}
+
+hr {
+    border: none;
+    background-color: var(--clr-pink-dark);
+    height: 2px;
+    width: 140px;
+    margin: 20px auto;
+}
+
+p {
+    line-height: 21.82px;
+    padding: 0 10px;
+}
+
+.section__titulo {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 15px;
+    font-weight: 300;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+
+/* 2. MENU */
+
+.menu-bg {
+    background-color: var(--clr-green-ligth);
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 960px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.menu__logo {
+    margin: 10px;
+}
+
+.nav__list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nav__link {
+    padding: 20px 10px;
+}
+
+/*  HEADER */
+
+.intro {
+    font-weight: bold;
+    font-size: 3rem;
+    text-align: center;
+    margin: 0 auto;
+    padding: 25px 0;
+}
+
+/* QUEM SOMOS */
+
+.somos {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.somos-c {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.somos-c__texto {
+    flex: 6 1 160px;
+}
+
+.somos-c__img {
+    flex: 1 1 350px;
+}
+
+/* NOSSOS CURSOS */
+
+.cursos {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.cursos-c {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.curso {
+    width: 280px;
+    margin: 0 20px;
+}
+
+.curso_titulo {
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 100;
+    margin: 10px 0 5px 0;
+}
+
+/* PLANOS */
+
+.planos {
+    max-width: 960px;
+    margin: 0 auto;
+}
